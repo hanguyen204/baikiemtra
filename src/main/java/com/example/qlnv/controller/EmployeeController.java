@@ -40,13 +40,13 @@ public class EmployeeController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Employee> updateCustomer(@PathVariable int id, @RequestBody Employee customer) {
-        Optional<Employee> customerOptional = iEmployeeService.findById(id);
-        if (!customerOptional.isPresent()) {
+    public ResponseEntity<Employee> updateEmployee(@PathVariable int id, @RequestBody Employee employee) {
+        Optional<Employee> employeeOptional = iEmployeeService.findById(id);
+        if (!employeeOptional.isPresent()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        customer.setId(customerOptional.get().getId());
-        return new ResponseEntity<>(iEmployeeService.save(customer), HttpStatus.OK);
+        employee.setId(employeeOptional.get().getId());
+        return new ResponseEntity<>(iEmployeeService.save(employee), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
