@@ -1,6 +1,6 @@
 package com.example.qlnv.controller;
 
-import com.example.qlnv.Service.IEmployeeService;
+import com.example.qlnv.service.IEmployeeService;
 import com.example.qlnv.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

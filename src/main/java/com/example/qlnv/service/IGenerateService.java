@@ -1,4 +1,4 @@
-package com.example.qlnv.Service;
+package com.example.qlnv.service;
 
 import java.util.Optional;
 
