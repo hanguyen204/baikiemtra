@@ -2,7 +2,7 @@ package com.example.qlnv.service;
 
 import java.util.Optional;
 
-public interface IGenerateService<T> {
+public interface IGeneratesService<T> {
     Iterable<T> findAll();
     Optional<T>findById(int id);
     T save(T t);
